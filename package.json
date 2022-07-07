@@ -1,0 +1,30 @@
+{
+  "name": "cursojs_api_rest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jezreel-Moraes/cursoJS_API_REST.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jezreel-Moraes/cursoJS_API_REST/issues"
+  },
+  "homepage": "https://github.com/Jezreel-Moraes/cursoJS_API_REST#readme",
+  "devDependencies": {
+    "eslint": "^8.19.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "nodemon": "^2.0.19",
+    "sucrase": "^3.23.0"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
