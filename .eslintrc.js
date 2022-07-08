@@ -12,5 +12,8 @@ module.exports = {
     "no-console": "off",
     quotes: "off",
     "class-methods-use-this": "off",
+    "no-param-reassign": "off",
+    indent: "off",
+    "comma-dangle": "off",
   },
 };
