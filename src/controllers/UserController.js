@@ -35,7 +35,7 @@ export default new (class UserController {
       return user
         ? res.json(user)
         : res.status(400).json({
-            errors: ["Usuário não existe"],
+            errors: ["User not exists"],
           });
     } catch (error) {
       return res.json(null);
@@ -47,7 +47,7 @@ export default new (class UserController {
       const user = await User.findByPk(req.user.id);
       if (!user) {
         res.status(400).json({
-          errors: ["Usuário não existe"],
+          errors: ["User not exists"],
         });
       }
 
@@ -73,7 +73,7 @@ export default new (class UserController {
       const user = await User.findByPk(req.user.id);
       if (!user) {
         res.status(400).json({
-          errors: ["Usuário não existe"],
+          errors: ["User not exists"],
         });
       }
 
