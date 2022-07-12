@@ -3,8 +3,11 @@ import User from "../models/User";
 export default new (class UserController {
   async create(req, res) {
     try {
+      console.log(req.body);
       const newUser = await User.create(req.body);
+      console.log(newUser);
       const { id, name, email } = newUser;
+
       return res.json({ id, name, email });
     } catch (error) {
       return res.status(400).json({
