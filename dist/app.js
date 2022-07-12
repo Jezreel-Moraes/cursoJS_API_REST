@@ -21,7 +21,8 @@ class App {
     this.app.use(_express2.default.urlencoded({ extended: true }));
     this.app.use(_express2.default.json());
     this.app.use(
-      _express2.default.static("/images/", _path.resolve.call(void 0, __dirname, "..", "uploads", "images"))
+      "/images/",
+      _express2.default.static(_path.resolve.call(void 0, __dirname, "..", "uploads", "images"))
     );
   }
 
