@@ -10,6 +10,6 @@ git commit -am "$message"
 git push
 ssh server@192.168.100.40 \
   'git -C /home/server/cursoJS_API_REST/' \
-  'git pull &&' \
-  'npm i &&'
+  'pull &&' \
+  'npm i &&' \
   'pm2 restart api && sudo systemctl restart nginx'
