@@ -11,5 +11,5 @@ git push
 ssh server@192.168.100.40 \
   'git -C /home/server/cursoJS_API_REST/' \
   'pull &&' \
-  'npm i &&' \
+  'npm -C /home/server/cursoJS_API_REST/ i &&' \
   'pm2 restart api && sudo systemctl restart nginx'
