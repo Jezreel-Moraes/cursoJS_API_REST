@@ -1,5 +1,7 @@
 #!/bin/bash
 npm run build
+npm update -y
+npm upgrade -y
 git add .
 
 echo "Message to commit:"
