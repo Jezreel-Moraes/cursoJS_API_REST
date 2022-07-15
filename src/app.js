@@ -12,7 +12,7 @@ import photoRoutes from "./routes/photoRoutes";
 
 require("dotenv").config();
 
-const whiteList = [];
+const whiteList = ["0.0.0.0", "localhost"];
 
 const corsOptions = {
   origin: (origin, callback) => {
